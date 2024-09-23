@@ -28,5 +28,5 @@ def home(request):
     }
     return render(request, 'blog/home.html', context)
 
-# def about(request):
-#     return HttpResponse('<h1> Blog About</h1><p>This page contains information about the blog.</p>')
+def about(request):
+    return render(request, 'blog/about.html')
